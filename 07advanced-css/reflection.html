@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Savannah Moller">
+    <meta name="description"
+        content="Helping people separate anxiety from identity through thoughtful education, reflection, and practical coping strategies for lasting impact.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="savvymethod.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>The Savvy Method</title>
+</head>
+
+<body>
+    <!-- start the page head -->
+    <header>
+        <img src="images/logo.png" alt="Logo for The Savvy Method" width="85" height="85">
+        <div class="brand">
+            <span>The Savvy Method</span>
+            <p class="slogan">Anxiety is an experience, not an identity.</p>
+        </div>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="repeats.html">Why Anxiety Repeats Itself</a></li>
+            <li><a href="cycle.html">Breaking the Cycle</a></li>
+            <li><a href="separation.html">Separating Facts from Feelings</a></li>
+            <li><a href="rewriting.html">Rewriting Thought Patterns</a></li>
+            <li><a href="visualization.html">Visualization & Manifestation</a></li>
+            <li><a href="gratitude.html">Gratitude & Emotional State</a></li>
+            <li><a href="story.html">My Story</a></li>
+            <li><a href="gallery.html">Image Gallery</a></li>
+            <li class="active"><a href="reflection.html">Thoughtwork Reflection Builder</a></li>
+        </ul>
+    </nav>
+    <!-- start the main content -->
+    <main>
+        <h1>Thoughtwork Reflection Builder</h1>
+        <h2>Thoughtwork Exercise</h2>
+
+        <form method="get" class="reflect" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name*<input type="text" name="fname" required></label>
+                <label>Last Name*<input type="text" name="lname" required></label>
+                <label>Email*<input type="email" name="email" required></label>
+                <label>Phone Number*<input type="tel" name="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Experience</legend>
+                <p>Which situation tends to trigger the most anxiety for you right now?</p>
+                <label><input type="radio" name="trigger" value="social">Social Anxiety</label>
+                <label><input type="radio" name="trigger" value="transportation">Driving or Transportation</label>
+                <label><input type="radio" name="trigger" value="school">School or Work</label>
+                <label><input type="radio" name="trigger" value="health">Health Concerns</label>
+                <label><input type="radio" name="trigger" value="future">Uncertainty about the Future</label>
+                <label><input type="radio" name="trigger" value="other">Other</label>
+
+                <p>What reactions do you commonly notice when anxiety appears?</p>
+                <label><input type="checkbox" name="overthink" value="yes">Overthinking</label>
+                <label><input type="checkbox" name="panic" value="yes">Panic Symptoms</label>
+                <label><input type="checkbox" name="avoid" value="yes">Avoidance</label>
+                <label><input type="checkbox" name="racing" value="yes">Racing Thoughts</label>
+                <label><input type="checkbox" name="tension" value="yes">Physical Tension</label>
+                <label><input type="checkbox" name="concentration" value="yes">Trouble Concentrating</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Current Anxiety Details</legend>
+                <label>How intense is this anxiety?
+                    <select name="intensity">
+                        <option value="mild">Mild</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="severe">Severe</option>
+                    </select></label>
+                <label>Write the main thought that keeps repeating<textarea name="usercomments"></textarea></label>
+            </fieldset>
+
+            <input type="submit" value="Complete Reflection">
+        </form>
+
+
+    </main>
+
+    <!-- start the page footer -->
+    <footer>
+        <h3>Contact Information</h3>
+        <address>The Savvy Method<br>
+            123 W Seasons View Ct,<br>
+            Lehi, UT 84043<br>
+            <strong>Phone: </strong><a href="tel:+18014076320">(801) 407-6320</a>
+        </address>
+        <br>
+        <p>&copy;2026 &bull; Savannah Moller &bull; Web Essentials (DWDD1600)</p>
+    </footer>
+
+</body>
+
+</html>
