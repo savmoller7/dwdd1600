@@ -1,0 +1,417 @@
+/* 
+Teal: #1F6F78
+Light Blue: #88BFD1
+(lighter blue: #DCECF1)
+Charcoal: #2E2E2E
+Salmon: #D98C7A
+Cream: #FAFAF7
+*/
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header p {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+header span {
+    font-family: "Playfair Display", serif;
+}
+
+/* Header */
+header {
+    background-color: #FAFAF7;
+    border-bottom: solid 2px #88BFD1;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header img {
+    width: 88px;
+    height: auto;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .brand div {
+    display: flex;
+    flex-direction: column;
+}
+
+header span {
+    color: #1F6F78;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+header p {
+    color: #2E2E2E;
+    margin: .3rem 0 0 0;
+}
+
+/* Navigation */
+nav {
+    background-image: linear-gradient(to right, #c8dde4, #FAFAF7)
+}
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #2E2E2E;
+        background-color: #aed5e2;
+        text-decoration: none;
+        border: solid 1px #88BFD1;
+        border-radius: 8px;
+        font-weight: 400;
+    }
+
+    nav li {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    nav li.active a {
+        background-color: #88BFD1;
+        color: white;
+    }
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 601px) {
+    nav {
+        background-color: #DCECF1;
+        border-bottom: solid 2px #88BFD1;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        min-height: 48px;
+        padding: .83rem 1rem;
+        text-decoration: none;
+        font-weight: 400;
+        color: #1F6F78;
+    }
+
+    nav a:hover {
+        color: #88BFD1;
+    }
+
+    nav li.active a {
+        background-color: #88BFD1;
+        color: #FFF;
+    }
+}
+
+/* Main */
+main {
+    background-color: #FAFAF7;
+    padding: 20px;
+    border: solid 2px #DCECF1;
+    border-radius: 5px;
+}
+
+main h1 {
+    color: #205e72;
+}
+
+main h2 {
+    color: #205e72;
+    margin-bottom: .5rem;
+}
+
+main p {
+    color: #2E2E2E;
+    margin: 0;
+}
+
+main strong {
+    color: #205e72;
+}
+
+main a {
+    color: #2E2E2E;
+}
+
+/* Hero Image */
+figure.hero {
+    margin: 0 0 0 10px;
+    width: 35%;
+    float: right;
+}
+
+figure.hero img {
+    width: 100%;
+    height: auto;
+    border: solid 1px #205e72;
+    border-radius: 6px;
+}
+
+figure.hero figcaption {
+    text-align: center;
+    font-size: .80rem;
+    color: #205e72;
+}
+
+/* Gallery Images */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 15px;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+div.gallery figure {
+    margin: 0;
+    width: 300px;
+    border: solid 1px #205e72;
+    border-radius: 6px;
+}
+
+div.gallery figcaption {
+    text-align: center;
+    font-weight: 400;
+    font-size: .8rem;
+    color: #205e72;
+    padding: .3rem;
+}
+
+div.gallery figure:hover {
+    box-shadow: 0px 0px 10px #6b9eaf;
+}
+
+
+/* Packages */
+div.packages {
+    border: solid 1px #88BFD1;
+    background-color: #e8f2f5;
+    padding: 0 .5rem 1rem 1rem;
+    margin-bottom: .8rem;
+    border-radius: 5px;
+}
+
+div.packages h2 {
+    margin: .6rem 0 .8rem 0;
+}
+
+div.packagesinfo {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+div.packagesinfo img {
+    width: 300px;
+    height: auto;
+    border: solid 1px #659daf;
+    border-radius: 6px;
+}
+
+div.packagesinfo p {
+    margin-bottom: .8rem;
+}
+
+div.packagesinfo p.head {
+    margin-bottom: .1rem;
+}
+
+div.packages a:hover {
+    color: #659daf;
+}
+
+div.packages b {
+    color: #113a47;
+}
+
+
+/* Small Screen Fix */
+@media only screen and (max-width: 600px) {
+    div.packages {
+        padding: 0 1rem 1rem 1rem;
+    }
+
+    div.packagesinfo {
+        display: block;
+    }
+
+    div.packagesinfo img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0 0 1rem 0;
+    }
+
+    div.packagesinfo div {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+/* Contact Form */
+.contact fieldset {
+    border: solid 1px #88BFD1;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.contact label {
+    margin: .8rem .2rem 1rem .5rem;
+}
+
+.contact p,
+.contact label {
+    color: #205e72;
+}
+
+.contact fieldset p {
+    margin: 1rem .5rem .2rem .5rem;
+    font-size: .9rem;
+}
+
+.contact legend {
+    color: #6b9eaf;
+    font-size: .8rem;
+    font-weight: 400;
+    padding: 0 .5rem;
+}
+
+.contact select {
+    color: #2E2E2E;
+}
+
+.contact input,
+.contact textarea {
+    color: #2E2E2E;
+    margin-top: .4rem;
+}
+
+.contact textarea {
+    height: 6rem;
+    background-color: #e8f2f5;
+    margin: 0 0 .5rem .5rem;
+}
+
+.contact :required {
+    background-color: #e8f2f5;
+}
+
+.contact select {
+    background-color: #e8f2f5;
+    margin: .8rem .2rem 1rem .5rem;
+}
+
+.contact label,
+.contact select,
+.contact [type=text],
+.contact [type=email],
+.contact [type=tel],
+.contact textarea {
+    display: block;
+}
+
+.contact [type=text],
+.contact [type=email],
+.contact select,
+.contact [type=tel],
+.contact textarea {
+    border: solid 1px #6b9eaf;
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+}
+
+.contact [type=submit] {
+    background-color: #659daf;
+    border: 1px solid #3a6574;
+    border-radius: .3rem;
+    padding: 1rem;
+    color: #FFF;
+    font-family: "Playfair Display", serif;
+    margin: 1rem 0 1rem 1.5rem;
+}
+
+/* Footer */
+footer {
+    color: #205e72;
+    background-color: #DCECF1;
+    font-size: .8rem;
+    clear: both;
+}
+
+footer h3 {
+    color: #205e72;
+    margin: 0;
+    padding: 1rem;
+    text-align: left;
+}
+
+footer address {
+    color: #1F6F78;
+    text-align: left;
+    padding: 0 1rem;
+}
+
+footer p {
+    padding: 0 1rem 1rem 1rem;
+    margin: 0;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+footer a {
+    color: #2E2E2E;
+}
+
+footer a:hover {
+    color: #6b9eaf;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
